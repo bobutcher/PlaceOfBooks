@@ -12,7 +12,7 @@ class BooksController < ApplicationController
   end
 
   def create
-    @book = Book.create
+    @book = Book.create book_params
     redirect_to action: "show", id: @book.id
   end
 
@@ -27,11 +27,10 @@ class BooksController < ApplicationController
   def destroy
     @book = Book.find(params[:id]).destroy
   end
-end
-
 
   private
 
-  def book_requires
-    params.require(:book).permit(:name, :description)
+  def book_params
+    params.require(:book).permit(:title, :description)
   end
+end
