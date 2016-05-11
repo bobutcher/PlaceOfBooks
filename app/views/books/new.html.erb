@@ -1,7 +1,7 @@
 <h1>Add a new book</h1>
 <p>Create your new book here:</p>
 
-<%= form_for @book do |f|%>
+  <%= form_for @book do |f|%>
   <%= f.label :title %>
   <%= f.text_field :title%> <br>
 
@@ -10,6 +10,7 @@
   <br>
   <%= f.submit %>
   <% end %>
+
 
 
   <p> <a href="/books">Home</a> </p>

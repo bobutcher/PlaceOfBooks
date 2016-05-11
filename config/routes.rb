@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
-  get 'reservations/index'
-
-  get 'reservations/create'
-
-  get 'reservations/show'
-
+  resources :reservations
   resources :books
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

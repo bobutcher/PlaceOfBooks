@@ -1,11 +1,10 @@
 <h1>Library Books</h1>
 <p>Here's all the books:</p>
   <p> <% @books.each do |book| %> </p>
-  <li>
-    <%= link_to book.title %>:
-    <a href="#">Reserve Now</a>
-    <a href="/books/:id"> Edit</a>
-  </li>
+  <ul>
+    <%= link_to book.title, book %>    :
+    <%= link_to "reserve", new_reservation_path(book_id: book.id)%>
+  </ul>
  <% end %>
 
  <p> <a href="/books/new">Add a new book</a></p>

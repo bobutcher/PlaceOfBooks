@@ -1,0 +1,12 @@
+<p>
+  <%= form_for @reservation do |f|%>
+  <%= f.label :name %>
+  <%# <%= f.hidden_field :book_id %>
+  <%= f.text_field :name%> <br>
+
+  <%= f.label :return_date %>
+  <%= f.date_field :return_date %> <br>
+  <br>
+  <%= f.submit %>
+  <% end %>
+</p>
