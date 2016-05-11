@@ -3,7 +3,8 @@
   <p> <% @books.each do |book| %> </p>
   <ul>
     <%= link_to book.title, book %>    :
-    <%= link_to "reserve", new_reservation_path(book_id: book.id)%>
+    <%= link_to "Reserve", new_reservation_path(book_id: book.id)%>
+    <%= link_to "Delete", book_path(book.id), method: :delete %>
   </ul>
  <% end %>
 
