@@ -4,7 +4,8 @@ class ReservationsController < ApplicationController
   end
 
   def new
-    @reservation = Reservation.new
+    @reservation = Reservation.new({book_id: params[:book_id]})
+
   end
 
   def create
@@ -19,6 +20,7 @@ class ReservationsController < ApplicationController
   private
 
   def reservation_params
-    params.require(:reservation).permit(:name, :return_date)
+    params.require(:reservation).permit(:name, :return_date, :book_id)
+
   end
 end

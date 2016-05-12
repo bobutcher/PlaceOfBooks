@@ -1,9 +1,11 @@
 <h1>Reservations</h1>
-<p>Create your new reservation here:</p>
-<p>Reservations should be returned 3 days from today</p>
-Return Date: <input type="date" name="field1" id="field1" <br>
-<br>
-<br
+<p>All reservations:</p>
+
+<% @reservations.each do |reservation| %>
+<%= reservation.book.title if reservation.book %> |
+Checked out to: <%= reservation.name %> |
+Due Date: <%= reservation.return_date %> <br>
+<% end %>
 
 
 
