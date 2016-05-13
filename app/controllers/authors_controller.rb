@@ -24,7 +24,6 @@ class AuthorsController < ApplicationController
   def create
     @author = Author.create(author)
     redirect_to action: "show", id: @author.id
-
   end
 
   def destroy

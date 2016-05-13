@@ -4,7 +4,7 @@
 <% @reservations.each do |reservation| %>
 <%= reservation.book.title if reservation.book %> |
 <% if reservation.overdue? %>
-<span>Overdue!</span>
+<span>Overdue!</span> |
 <% end %>
 Checked out to: <%= reservation.name %> |
 Due Date: <%= reservation.return_date %> <br>
