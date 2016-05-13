@@ -1,4 +1,32 @@
 Rails.application.routes.draw do
+  get 'users/index'
+
+  get 'users/new'
+
+  get 'users/show'
+
+  get 'users/edit'
+
+  get 'users/destroy'
+
+  get 'users/update'
+
+  get 'users/create'
+
+  get 'authors/index'
+
+  get 'authors/new'
+
+  get 'authors/show'
+
+  get 'authors/edit'
+
+  get 'authors/create'
+
+  get 'authors/destroy'
+
+  get 'authors/update'
+
   resources :reservations
   resources :books
   # The priority is based upon order of creation: first created -> highest priority.
