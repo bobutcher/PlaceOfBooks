@@ -1,10 +1,11 @@
 <h1>Edit Your Book</h1>
 <%= form_for @book do |f|%>
 <%= f.label :title %>
-<%= f.text_field :title%> <br>
-
+<%= f.text_field :title%>
+<br>
 <%= f.label :description %>
 <%= f.text_field :description %> <br>
 <br>
-<%= f.submit %>
-<% end %> 
+
+<p> <a href="/books">Home</a> </p>
+<% end %>

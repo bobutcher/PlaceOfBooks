@@ -1,10 +1,10 @@
 class AuthorsController < ApplicationController
   def index
-    @authors = Authors.all
+    @authors = Author.all
   end
 
   def new
-    @author = Authors.new
+    @author = Author.new
   end
 
   def show
