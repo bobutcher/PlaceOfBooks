@@ -1,6 +1,5 @@
 == README
 
 This application allows for a user to manage books, authors and reservations.
-Things you may want to cover:
 
 * Ruby version 2.3
